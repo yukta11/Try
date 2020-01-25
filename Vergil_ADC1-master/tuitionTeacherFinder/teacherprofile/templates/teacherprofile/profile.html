@@ -1,0 +1,65 @@
+
+
+
+
+<h1>Available Teacher</h1>
+<table>
+<thead>
+	<tr>
+		<th>Name</th>
+		<th>course</th>
+		<th>Description</th>
+		<th>Salary</th>
+		<th>Summary</th>
+	</tr>	
+</thead>
+
+<tbody>
+	{% for a in dip %}
+	<tr>
+		
+		<td>{{ a.Name}}</td>
+		<td>{{ a.course}}</td>
+		<td>{{ a.description}}</td>
+		<td>{{ a.Salary}}</td>
+		<td>{{ a.Summary}}</td>
+	</tr>
+
+	{% endfor %}
+
+</tbody>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
