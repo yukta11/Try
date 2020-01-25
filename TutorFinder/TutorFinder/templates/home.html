@@ -1,0 +1,26 @@
+<title>Tutor Finder</title>
+
+<body>
+
+	<h1 align="center" >Tutor Finder</h1>
+
+		<form method="get" class="search-bar">
+		<input type="text" placeholder="Search" name="q">
+		</form>
+		{% for tutor in tutors %}
+		{{tutor.pk}}
+		{% endfor %}
+
+
+	{% for professor in professors %}
+		<img src="{{professor.images.url}}" style="height: 250; padding: 5px; border: 2px solid">
+		<h1>Name: {{professor.fname}} {{professor.lname}}</h1>
+		<h1>Date Of Birth: {{professor.date_of_birth}}</h1>
+		<h1>Qualification: {{professor.qualifiaction}}</h1>
+		<h1>Experience: {{professor.experience}}</h1>
+		<h1>Salary: {{professor.salary}}</h1>
+		<br>
+	{% endfor %}
+
+
+</body>
